@@ -2,16 +2,40 @@
 //  LPSnackbar.swift
 //  LPSnackbar
 //
-//  Created by Luis Padron on 7/11/17.
-//  Copyright © 2017 Luis Padron. All rights reserved.
+//  Copyright (c) 2017 Luis Padron
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a
+//  copy of this software and associated documentation files (the "Software"),
+//  to deal in the Software without restriction, including without limitation the
+//  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is furnished
+//  to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+//  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND
+//  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+//  FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+//  OR OTHERWISE, ARISING FROM, OUT OF OR IN
+//  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
 import UIKit
 
+/**
+ The controller for an `LPSnackbarView`.
+ 
+ This class handles everything that has to do with showing, dismissing and performing actions in a `LPSnackbarView`.
+ There are several static helper methods, which allow presenting a basic snack without needing instantiate an `LPSnackbar` yourself.
+ */
 open class LPSnackbar {
     
     // MARK: Public Members
     
+    /// The `LPSnackbarView` for the controller, access this view and it's subviews to do any additional customization.
     open lazy var view: LPSnackbarView = {
         let snackView = LPSnackbarView(frame: .zero)
         snackView.controller = self
@@ -19,6 +43,14 @@ open class LPSnackbar {
         return snackView
     }()
     
+    /**
+     The width percent of the total available size that the `view` should take up.
+     
+     ## Important
+     
+     This should only be a value between `0.0` and `1.0`. If this value is set past this range, the value
+     will be reset to the default value of `0.98`.
+     */
     open var widthPercent: CGFloat = 0.98 {
         didSet {
             // Clamp at between the range
@@ -29,6 +61,15 @@ open class LPSnackbar {
         }
     }
     
+    /**
+     The height for the `LPSnackbarView`.
+     
+     ## Important
+     
+     Do not set the frame of the `view` yourself. Instead set the `widthPercent` and `height`.
+     Setting the frame for `view` can have unexpected results as the frame is calculated in a different way depending
+     on many variables.
+     */
     open var height: CGFloat = 40.0 {
         didSet {
             // Update height
@@ -36,6 +77,13 @@ open class LPSnackbar {
         }
     }
     
+    /**
+     The bottom spacing for the `view`.
+     
+     For example, by default the `view` is placed in the main `UIWindow` of an application with a default
+     bottom spacing of `12.0`, however, if you have a `UITabBarController` you may want to increase the bottom spacing
+     so that the snack is presented above the bar.
+     */
     open var bottomSpacing: CGFloat = 12.0 {
         didSet {
             // Update frame
@@ -43,30 +91,48 @@ open class LPSnackbar {
         }
     }
     
-    open var bottomSpacingWhenStacked: CGFloat = 8.0 {
+    /// Similar to the `bottomSpacing` property, except this is only used when multiple `LPSnackbarViews` are stacked.
+    open var stackedBottomSpacing: CGFloat = 8.0 {
         didSet {
             // Update any layouts
             self.view.setNeedsLayout()
         }
     }
     
+    /// Optional view to display the `view` in, by default this is `nil`, thus the main `UIWindow` is used for presentation.
     open var viewToDisplayIn: UIView?
     
+    /// The duration for the animation of both the adding and removal of the `view`.
     open var animationDuration: TimeInterval = 0.5
     
+    /// The completion block for an `LPSnackbar`, `true` is sent if button was tapped, `false` otherwise.
     public typealias SnackbarCompletion = (Bool) -> Void
     
     // MARK: Private Members
     
+    /// The timer responsible for notifying about when the view needs to be removed.
     private var displayTimer: Timer?
+    
+    /// How long the view will be presented for.
     private var displayDuration: TimeInterval?
     
+    /// Whether or not the view was initially animated, this is used when animating out the view.
     private var wasAnimated: Bool = false
     
+    /// The completion block which is assigned when calling `show(animated:completion:)`
     private var completion: SnackbarCompletion?
     
     // MARK: Initializers
     
+    /**
+     Creates an `LPSnackbar`.
+     
+     ## Important
+     
+     If `buttonTitle` is `nil`, no button will be displayed.
+     
+     If `displayDuration` is `nil`, the view will not be removed unless swiped away or button is pressed.
+     */
     public init (title: String, buttonTitle: String?, displayDuration: TimeInterval? = 5.0) {
         self.displayDuration = displayDuration
         
@@ -84,6 +150,15 @@ open class LPSnackbar {
         finishInit()
     }
     
+    /**
+     Creates an `LPSnackbar`.
+     
+     ## Important
+     
+     If `attributedButtonTitle` is `nil`, no button will be displayed.
+     
+     If `displayDuration` is `nil`, the view will not be removed unless swiped away or button is pressed.
+     */
     public init(attributedTitle: NSAttributedString, attributedButtonTitle: NSAttributedString?, displayDuration: TimeInterval? = 5.0) {
         self.displayDuration = displayDuration
         
@@ -101,6 +176,7 @@ open class LPSnackbar {
         finishInit()
     }
     
+    /// Helper method which creates the timer (if needed) and adds the swipe gestures to the view
     private func finishInit() {
         // Set timer for when view will be removed
         if let duration = displayDuration {
@@ -130,6 +206,7 @@ open class LPSnackbar {
     
     // MARK: Helper Methods
     
+    /// Returns the calculated/appropriate frame for the view, takes into account whether there are multiple snacks on the view.
     internal func frameForView() -> CGRect {
         guard let superview = viewToDisplayIn ?? UIApplication.shared.keyWindow ?? nil else {
             return .zero
@@ -152,7 +229,7 @@ open class LPSnackbar {
         }
         
         if let snack = snackView {
-            startY = snack.frame.maxY - snack.frame.height - height - bottomSpacingWhenStacked
+            startY = snack.frame.maxY - snack.frame.height - height - stackedBottomSpacing
         } else {
             startY = superview.bounds.maxY - height - bottomSpacing
         }
@@ -160,6 +237,7 @@ open class LPSnackbar {
         return CGRect(x: startX, y: startY, width: width, height: height)
     }
     
+    /// Prepares the `LPSnackbar` for removal
     private func prepareForRemoval() {
         NotificationCenter.default.removeObserver(self)
         view.controller = nil
@@ -168,6 +246,7 @@ open class LPSnackbar {
     
     // MARK: Animation
     
+    /// Animates the view in using a springy/bounce effect
     private func animateIn() {
         let frame = frameForView()
         let inY = frame.origin.y
@@ -195,6 +274,7 @@ open class LPSnackbar {
         wasAnimated = true
     }
     
+    /// Animates the view in by moving down towards the edge of the screen and fading it out
     private func animateOut(wasButtonTapped: Bool = false) {
         let frame = view.frame
         let outY = frame.origin.y + height + bottomSpacing
@@ -215,6 +295,7 @@ open class LPSnackbar {
         )
     }
     
+    /// Animates the swipe of a view by moving it to a specified position
     private func animateSwipeOut(to position: CGPoint) {
         // Invalidate timer
         displayTimer?.invalidate()
@@ -237,6 +318,7 @@ open class LPSnackbar {
     
     // MARK: Actions
     
+    /// Called whenever the `displayTimer` is done, will animate the view out if allowed
     @objc private func timerDidFinish() {
         if wasAnimated {
             self.animateOut()
@@ -248,6 +330,7 @@ open class LPSnackbar {
         }
     }
     
+    /// Called whenever the `views`'s button is tapped, will animate the view out if allowed
     internal func viewButtonTapped() {
         // If timer is active, invalidate since view will now dissapear no matter what
         displayTimer?.invalidate()
@@ -264,6 +347,7 @@ open class LPSnackbar {
         }
     }
     
+    /// Called when another `LPSnackbarView` was removed from the screen. Refreshes the frame of the current `LPSnackbarView`.
     @objc private func snackWasRemoved(notification: Notification) {
         // Recalculate the frame, since another snack view has been removed
         // If this view was on top, it will look weird to have it floating in the same place
@@ -279,6 +363,7 @@ open class LPSnackbar {
         }, completion: nil)
     }
     
+    /// Handles left, right, and bottom swipes on the view by animating them out
     @objc private func handleSwipes(sender: UISwipeGestureRecognizer) {
         switch sender.direction {
         case .left:
@@ -297,6 +382,7 @@ open class LPSnackbar {
     
     // MARK: Public Methods
     
+    /// Presents the snack to the screen
     open func show(animated: Bool = true, completion: SnackbarCompletion? = nil) {
         guard let superview = viewToDisplayIn ?? UIApplication.shared.keyWindow ?? nil else {
             print("Unable to get a superview, was not able to show\n Couldn't add LPSnackbarView as a subview to the main UIWindow")
@@ -316,6 +402,7 @@ open class LPSnackbar {
         }
     }
     
+    /// Dismisses the snack from the screen
     open func dismiss(animated: Bool = true) {
         if animated {
             self.animateOut()
@@ -326,6 +413,7 @@ open class LPSnackbar {
     
     // MARK: Static Methods
     
+    /// Allows showing a simple snack without needing to instantiate any `LPSnackbar`
     open static func showSnack(title: String, displayDuration: TimeInterval? = 5.0, completion: SnackbarCompletion? = nil) {
         let snack = LPSnackbar(title: title, buttonTitle: nil, displayDuration: displayDuration)
         snack.show(animated: true) { _ in
@@ -333,6 +421,7 @@ open class LPSnackbar {
         }
     }
     
+    /// Allows showing a simple, more customizable, snack without needing to instantiate any `LPSnackbar`
     open static func showSnack(attributedTitle: NSAttributedString, displayDuration: TimeInterval? = 5.0, completion: SnackbarCompletion? = nil) {
         let snack = LPSnackbar(attributedTitle: attributedTitle, attributedButtonTitle: nil, displayDuration: displayDuration)
         snack.show(animated: true) { _ in

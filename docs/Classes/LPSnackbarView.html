@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LPSnackbarView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/LPSnackbarView" class="dashAnchor"></a>
+    <a title="LPSnackbarView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">LPSnackbar Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/luispadron/LPSnackbar"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">LPSnackbar Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        LPSnackbarView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/LPSnackbar.html">LPSnackbar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LPSnackbarView.html">LPSnackbarView</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LPSnackbarView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">LPSnackbarView</span><span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>LPSnackbarView</code> which contains 3 subviews.</p>
+
+<ul>
+<li><p>titleLabel: The label on the left hand side of the view used to display text.</p></li>
+<li><p>button: The button on the right hand side of the view which allows an action to be performed.</p></li>
+<li><p>seperator: A small view which adds an accent that seperates the <code>titleLabel</code> and the <code>button</code>.</p></li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbar0A4ViewC11leftPadding12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/leftPadding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbar0A4ViewC11leftPadding12CoreGraphics7CGFloatVv">leftPadding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The amount of padding from the left handside, used to layout the <code><a href="../Classes/LPSnackbarView.html#/s:10LPSnackbar0A4ViewC10titleLabelSo7UILabelCv">titleLabel</a></code>, default is <code>8.0</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">leftPadding</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">8.0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbar0A4ViewC12rightPadding12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/rightPadding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbar0A4ViewC12rightPadding12CoreGraphics7CGFloatVv">rightPadding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The amount of padding from the right handside, used to layout the <code><a href="../Classes/LPSnackbarView.html#/s:10LPSnackbar0A4ViewC6buttonSo8UIButtonCv">button</a></code>, default is <code>8.0</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">rightPadding</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">8.0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbar0A4ViewC22seperatorHeightPercent12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/seperatorHeightPercent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbar0A4ViewC22seperatorHeightPercent12CoreGraphics7CGFloatVv">seperatorHeightPercent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The height percent of the total available size that the seperator should take up inside the view.</p>
+<h2 id='important' class='heading'>Important</h2>
+
+<p>This should only be a value between <code>0.0</code> and <code>1.0</code>. If this value is set past this range, the value
+will be reset to the default value of <code>0.65</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">seperatorHeightPercent</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">0.65</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbar0A4ViewC14seperatorWidth12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/seperatorWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbar0A4ViewC14seperatorWidth12CoreGraphics7CGFloatVv">seperatorWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The width for the seperator, default is <code>1.5</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">seperatorWidth</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbar0A4ViewC16seperatorPadding12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/seperatorPadding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbar0A4ViewC16seperatorPadding12CoreGraphics7CGFloatVv">seperatorPadding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The amount of padding from the right side of the seperator (next to the button), default is <code>20.0</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">seperatorPadding</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">20.0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overrides"></a>
+                <a name="//apple_ref/swift/Section/Overrides" class="dashAnchor"></a>
+                <a href="#/Overrides">
+                  <h3 class="section-name">Overrides</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@LPSnackbar@objc(cs)LPSnackbarView(im)initWithFrame:"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LPSnackbar@objc(cs)LPSnackbarView(im)initWithFrame:">init(frame:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Overriden</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@LPSnackbar@objc(cs)LPSnackbarView(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LPSnackbar@objc(cs)LPSnackbarView(im)initWithCoder:">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Overriden</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@LPSnackbar@objc(cs)LPSnackbarView(im)layoutSubviews"></a>
+                    <a name="//apple_ref/swift/Method/layoutSubviews()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LPSnackbar@objc(cs)LPSnackbarView(im)layoutSubviews">layoutSubviews()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Overriden, lays out the <code><a href="../Classes/LPSnackbarView.html#/s:10LPSnackbar0A4ViewC9seperatorSo6UIViewCv">seperator</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">layoutSubviews</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@LPSnackbar@objc(cs)LPSnackbarView(im)removeFromSuperview"></a>
+                    <a name="//apple_ref/swift/Method/removeFromSuperview()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@LPSnackbar@objc(cs)LPSnackbarView(im)removeFromSuperview">removeFromSuperview()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Overriden, posts <code>snackRemoval</code> notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">removeFromSuperview</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Subviews"></a>
+                <a name="//apple_ref/swift/Section/Subviews" class="dashAnchor"></a>
+                <a href="#/Subviews">
+                  <h3 class="section-name">Subviews</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbar0A4ViewC10titleLabelSo7UILabelCv"></a>
+                    <a name="//apple_ref/swift/Property/titleLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbar0A4ViewC10titleLabelSo7UILabelCv">titleLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The label on the left hand side of the view used to display text.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">titleLabel</span><span class="p">:</span> <span class="kt">UILabel</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbar0A4ViewC6buttonSo8UIButtonCv"></a>
+                    <a name="//apple_ref/swift/Property/button" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbar0A4ViewC6buttonSo8UIButtonCv">button</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The button on the right hand side of the view which allows an action to be performed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">button</span><span class="p">:</span> <span class="kt">UIButton</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbar0A4ViewC9seperatorSo6UIViewCv"></a>
+                    <a name="//apple_ref/swift/Property/seperator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbar0A4ViewC9seperatorSo6UIViewCv">seperator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A small view which adds an accent that seperates the <code><a href="../Classes/LPSnackbarView.html#/s:10LPSnackbar0A4ViewC10titleLabelSo7UILabelCv">titleLabel</a></code> and the <code><a href="../Classes/LPSnackbarView.html#/s:10LPSnackbar0A4ViewC6buttonSo8UIButtonCv">button</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">seperator</span><span class="p">:</span> <span class="kt">UIView</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://luispadron.com" target="_blank" rel="external">Luis</a>. All rights reserved. (Last updated: 2017-07-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

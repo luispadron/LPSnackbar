@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LPSnackbar Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/LPSnackbar" class="dashAnchor"></a>
+    <a title="LPSnackbar Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">LPSnackbar Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/luispadron/LPSnackbar"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">LPSnackbar Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        LPSnackbar Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/LPSnackbar.html">LPSnackbar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LPSnackbarView.html">LPSnackbarView</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LPSnackbar</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">LPSnackbar</span></code></pre>
+
+                </div>
+              </div>
+            <p>The controller for an <code><a href="../Classes/LPSnackbarView.html">LPSnackbarView</a></code>.</p>
+
+<p>This class handles everything that has to do with showing, dismissing and performing actions in a <code><a href="../Classes/LPSnackbarView.html">LPSnackbarView</a></code>.
+There are several static helper methods, which allow presenting a basic snack without needing instantiate an <code>LPSnackbar</code> yourself.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Members"></a>
+                <a name="//apple_ref/swift/Section/Public Members" class="dashAnchor"></a>
+                <a href="#/Public%20Members">
+                  <h3 class="section-name">Public Members</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC4viewAA0A4ViewCv"></a>
+                    <a name="//apple_ref/swift/Property/view" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC4viewAA0A4ViewCv">view</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../Classes/LPSnackbarView.html">LPSnackbarView</a></code> for the controller, access this view and it&rsquo;s subviews to do any additional customization.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Classes/LPSnackbarView.html">LPSnackbarView</a></span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC12widthPercent12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/widthPercent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC12widthPercent12CoreGraphics7CGFloatVv">widthPercent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The width percent of the total available size that the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC4viewAA0A4ViewCv">view</a></code> should take up.</p>
+<h2 id='important' class='heading'>Important</h2>
+
+<p>This should only be a value between <code>0.0</code> and <code>1.0</code>. If this value is set past this range, the value
+will be reset to the default value of <code>0.98</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">widthPercent</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">0.98</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC6height12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC6height12CoreGraphics7CGFloatVv">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The height for the <code><a href="../Classes/LPSnackbarView.html">LPSnackbarView</a></code>.</p>
+<h2 id='important' class='heading'>Important</h2>
+
+<p>Do not set the frame of the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC4viewAA0A4ViewCv">view</a></code> yourself. Instead set the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC12widthPercent12CoreGraphics7CGFloatVv">widthPercent</a></code> and <code>height</code>.
+Setting the frame for <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC4viewAA0A4ViewCv">view</a></code> can have unexpected results as the frame is calculated in a different way depending
+on many variables.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">40.0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC13bottomSpacing12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/bottomSpacing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC13bottomSpacing12CoreGraphics7CGFloatVv">bottomSpacing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The bottom spacing for the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC4viewAA0A4ViewCv">view</a></code>.</p>
+
+<p>For example, by default the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC4viewAA0A4ViewCv">view</a></code> is placed in the main <code>UIWindow</code> of an application with a default
+bottom spacing of <code>12.0</code>, however, if you have a <code>UITabBarController</code> you may want to increase the bottom spacing
+so that the snack is presented above the bar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">bottomSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">12.0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC20stackedBottomSpacing12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/stackedBottomSpacing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC20stackedBottomSpacing12CoreGraphics7CGFloatVv">stackedBottomSpacing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Similar to the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC13bottomSpacing12CoreGraphics7CGFloatVv">bottomSpacing</a></code> property, except this is only used when multiple <code>LPSnackbarViews</code> are stacked.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">stackedBottomSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">8.0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC15viewToDisplayInSo6UIViewCSgv"></a>
+                    <a name="//apple_ref/swift/Property/viewToDisplayIn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC15viewToDisplayInSo6UIViewCSgv">viewToDisplayIn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional view to display the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC4viewAA0A4ViewCv">view</a></code> in, by default this is <code>nil</code>, thus the main <code>UIWindow</code> is used for presentation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">viewToDisplayIn</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC17animationDurationSdv"></a>
+                    <a name="//apple_ref/swift/Property/animationDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC17animationDurationSdv">animationDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The duration for the animation of both the adding and removal of the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC4viewAA0A4ViewCv">view</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">animationDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mf">0.5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC18SnackbarCompletiona"></a>
+                    <a name="//apple_ref/swift/Alias/SnackbarCompletion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC18SnackbarCompletiona">SnackbarCompletion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The completion block for an <code>LPSnackbar</code>, <code>true</code> is sent if button was tapped, <code>false</code> otherwise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">SnackbarCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAACABSS5title_SSSg11buttonTitleSdSg15displayDurationtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(title:buttonTitle:displayDuration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAACABSS5title_SSSg11buttonTitleSdSg15displayDurationtcfc">init(title:buttonTitle:displayDuration:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>LPSnackbar</code>.</p>
+<h2 id='important' class='heading'>Important</h2>
+
+<p>If <code>buttonTitle</code> is <code>nil</code>, no button will be displayed.</p>
+
+<p>If <code>displayDuration</code> is <code>nil</code>, the view will not be removed unless swiped away or button is pressed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span> <span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">buttonTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">displayDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAACABSo18NSAttributedStringC15attributedTitle_ADSg0d6ButtonE0SdSg15displayDurationtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(attributedTitle:attributedButtonTitle:displayDuration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAACABSo18NSAttributedStringC15attributedTitle_ADSg0d6ButtonE0SdSg15displayDurationtcfc">init(attributedTitle:attributedButtonTitle:displayDuration:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>LPSnackbar</code>.</p>
+<h2 id='important' class='heading'>Important</h2>
+
+<p>If <code>attributedButtonTitle</code> is <code>nil</code>, no button will be displayed.</p>
+
+<p>If <code>displayDuration</code> is <code>nil</code>, the view will not be removed unless swiped away or button is pressed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">attributedTitle</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">,</span> <span class="nv">attributedButtonTitle</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">?,</span> <span class="nv">displayDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Public Methods" class="dashAnchor"></a>
+                <a href="#/Public%20Methods">
+                  <h3 class="section-name">Public Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC4showySb8animated_ySbcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/show(animated:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC4showySb8animated_ySbcSg10completiontF">show(animated:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents the snack to the screen</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC18SnackbarCompletiona">SnackbarCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC7dismissySb8animated_tF"></a>
+                    <a name="//apple_ref/swift/Method/dismiss(animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC7dismissySb8animated_tF">dismiss(animated:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dismisses the snack from the screen</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">dismiss</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Static Methods" class="dashAnchor"></a>
+                <a href="#/Static%20Methods">
+                  <h3 class="section-name">Static Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC9showSnackySS5title_SdSg15displayDurationySbcSg10completiontFZ"></a>
+                    <a name="//apple_ref/swift/Method/showSnack(title:displayDuration:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC9showSnackySS5title_SdSg15displayDurationySbcSg10completiontFZ">showSnack(title:displayDuration:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows showing a simple snack without needing to instantiate any <code>LPSnackbar</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">showSnack</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">displayDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC18SnackbarCompletiona">SnackbarCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC9showSnackySo18NSAttributedStringC15attributedTitle_SdSg15displayDurationySbcSg10completiontFZ"></a>
+                    <a name="//apple_ref/swift/Method/showSnack(attributedTitle:displayDuration:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC9showSnackySo18NSAttributedStringC15attributedTitle_SdSg15displayDurationySbcSg10completiontFZ">showSnack(attributedTitle:displayDuration:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows showing a simple, more customizable, snack without needing to instantiate any <code>LPSnackbar</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">showSnack</span><span class="p">(</span><span class="nv">attributedTitle</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="p">,</span> <span class="nv">displayDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC18SnackbarCompletiona">SnackbarCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://luispadron.com" target="_blank" rel="external">Luis</a>. All rights reserved. (Last updated: 2017-07-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
