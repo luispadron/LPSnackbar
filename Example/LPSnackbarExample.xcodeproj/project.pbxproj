@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		971AC44670F31EE0FCD20481 /* Pods_LPSnackbarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FC8932F1E3EDB08A3FD558 /* Pods_LPSnackbarExample.framework */; };
 		A04AC5231F1818A7005AFF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AC5221F1818A7005AFF86 /* AppDelegate.swift */; };
 		A04AC5251F1818A7005AFF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AC5241F1818A7005AFF86 /* ViewController.swift */; };
 		A04AC5281F1818A7005AFF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AC5261F1818A7005AFF86 /* Main.storyboard */; };
 		A04AC52A1F1818A7005AFF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04AC5291F1818A7005AFF86 /* Assets.xcassets */; };
 		A04AC52D1F1818A7005AFF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AC52B1F1818A7005AFF86 /* LaunchScreen.storyboard */; };
+		DD61FCDF52F49116DCB948E9 /* Pods_LPSnackbarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03499C33B64E33442DCD075 /* Pods_LPSnackbarExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47FC8932F1E3EDB08A3FD558 /* Pods_LPSnackbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPSnackbarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		312BCC4E97D568A6F672D3BC /* Pods-LPSnackbarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSnackbarExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A03499C33B64E33442DCD075 /* Pods_LPSnackbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPSnackbarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04AC51F1F1818A7005AFF86 /* LPSnackbarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPSnackbarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04AC5221F1818A7005AFF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04AC5241F1818A7005AFF86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +25,7 @@
 		A04AC5291F1818A7005AFF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04AC52C1F1818A7005AFF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04AC52E1F1818A7005AFF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B85263CA28FF25EFE62CBE6B /* Pods-LPSnackbarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSnackbarExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample.release.xcconfig"; sourceTree = "<group>"; };
-		DA9A4008A602111CA9AA0899 /* Pods-LPSnackbarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSnackbarExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample.debug.xcconfig"; sourceTree = "<group>"; };
+		EAB25AE076342C04931E9CC0 /* Pods-LPSnackbarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSnackbarExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,20 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				971AC44670F31EE0FCD20481 /* Pods_LPSnackbarExample.framework in Frameworks */,
+				DD61FCDF52F49116DCB948E9 /* Pods_LPSnackbarExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41A70A7D7CB31C253CA6F5D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				312BCC4E97D568A6F672D3BC /* Pods-LPSnackbarExample.debug.xcconfig */,
+				EAB25AE076342C04931E9CC0 /* Pods-LPSnackbarExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		992E686E76A9126D72D571CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A03499C33B64E33442DCD075 /* Pods_LPSnackbarExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A04AC5161F1818A7005AFF86 = {
 			isa = PBXGroup;
 			children = (
 				A04AC5211F1818A7005AFF86 /* LPSnackbarExample */,
 				A04AC5201F1818A7005AFF86 /* Products */,
-				D58AF164BA1D7E8B5FAF8CB4 /* Pods */,
-				E56CF6D75AEE7F2DB4A6C847 /* Frameworks */,
+				41A70A7D7CB31C253CA6F5D5 /* Pods */,
+				992E686E76A9126D72D571CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,23 +88,6 @@
 			path = LPSnackbarExample;
 			sourceTree = "<group>";
 		};
-		D58AF164BA1D7E8B5FAF8CB4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DA9A4008A602111CA9AA0899 /* Pods-LPSnackbarExample.debug.xcconfig */,
-				B85263CA28FF25EFE62CBE6B /* Pods-LPSnackbarExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E56CF6D75AEE7F2DB4A6C847 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				47FC8932F1E3EDB08A3FD558 /* Pods_LPSnackbarExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,12 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A04AC5311F1818A7005AFF86 /* Build configuration list for PBXNativeTarget "LPSnackbarExample" */;
 			buildPhases = (
-				6E92672DA9C925FAD4097A6E /* [CP] Check Pods Manifest.lock */,
+				9557F74BFEC0F982F078B5E8 /* [CP] Check Pods Manifest.lock */,
 				A04AC51B1F1818A7005AFF86 /* Sources */,
 				A04AC51C1F1818A7005AFF86 /* Frameworks */,
 				A04AC51D1F1818A7005AFF86 /* Resources */,
-				A79BA0B16EA82BCD90A498EE /* [CP] Embed Pods Frameworks */,
-				E8006EDC4413F0286D46E9B0 /* [CP] Copy Pods Resources */,
+				E02303D30E839CB46BD420D6 /* [CP] Embed Pods Frameworks */,
+				2DBB3CF038E90B899266FEA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,7 +158,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6E92672DA9C925FAD4097A6E /* [CP] Check Pods Manifest.lock */ = {
+		2DBB3CF038E90B899266FEA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9557F74BFEC0F982F078B5E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,7 +191,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A79BA0B16EA82BCD90A498EE /* [CP] Embed Pods Frameworks */ = {
+		E02303D30E839CB46BD420D6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,21 +207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8006EDC4413F0286D46E9B0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -352,7 +352,7 @@
 		};
 		A04AC5321F1818A7005AFF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA9A4008A602111CA9AA0899 /* Pods-LPSnackbarExample.debug.xcconfig */;
+			baseConfigurationReference = 312BCC4E97D568A6F672D3BC /* Pods-LPSnackbarExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4FNMZ7SN42;
@@ -367,7 +367,7 @@
 		};
 		A04AC5331F1818A7005AFF86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B85263CA28FF25EFE62CBE6B /* Pods-LPSnackbarExample.release.xcconfig */;
+			baseConfigurationReference = EAB25AE076342C04931E9CC0 /* Pods-LPSnackbarExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4FNMZ7SN42;

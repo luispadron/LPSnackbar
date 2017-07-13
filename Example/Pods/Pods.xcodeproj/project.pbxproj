@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01491884AE0AAEDF2C6F9CBA85D72586 /* LPSnackbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C39B9400061C9CB6552B214DD7EBF02 /* LPSnackbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CF7729133D44989EA718F1A178CD957 /* LPSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7266EEDACA2FBC257534ACBB5ED02 /* LPSnackbar.swift */; };
-		9DEE77035894EBFA5AB6D6DAB7CF6DCB /* LPSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A6B8720399DC49A27CA87EE7D9F94DB /* LPSnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0874BECFDC216052B8796F1EF8FEDBED /* LPSnackbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D29F6CFFE7DFE082B2387A3AEFC91 /* LPSnackbarView.swift */; };
+		73C8C4FA03514665F62521904B9B9388 /* LPSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A75A5972B7FAF1244B0585A93F8B69E /* LPSnackbar-dummy.m */; };
+		882D6BD1C9F3B612A0278EF8983249C7 /* LPSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEEEB0FB5253BF1B3AC604A9A85C344 /* LPSnackbar.swift */; };
 		A0D8F2CD989CD3CB2449F0C210174EC7 /* Pods-LPSnackbarExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6947CA46368E77F731B2F2C56600DF05 /* Pods-LPSnackbarExample-dummy.m */; };
-		ADB480C7F10E7330B4A8BA76BC4C4A1F /* LPSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D18824C44DDB2ABA2AC2B652DFEF31 /* LPSnackbar-dummy.m */; };
-		BE241FDAB4D122FC7A51FE469AC22A23 /* LPSnackbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E790880168B4F5DF4C2C8E01C2C5966 /* LPSnackbarView.swift */; };
 		BEB6EF5A87869AD7F90D8E77E8AB2155 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		DBDB369B7AEC326091C6265083E8049D /* Pods-LPSnackbarExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ABE85284CDEB34B3CC35942A891166 /* Pods-LPSnackbarExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E38EA5DDD8D0AD10A40C7ED849D43013 /* LPSnackbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B15D3F3F0AA6D1ED456F14FB8E251F /* LPSnackbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4027F184FC2377C5A2E6E11B49E6BF7 /* LPSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E2478E9FDD550B9F5A95B3D3AD9175 /* LPSnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F60CA2D40BB17707EE643D761A2E28CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,28 +29,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C4148BB83A34D88C19E6577B14D2F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05AFD066B3CE8F74E9DD6AF55B02A4C2 /* LPSnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPSnackbar.xcconfig; sourceTree = "<group>"; };
+		0A75A5972B7FAF1244B0585A93F8B69E /* LPSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPSnackbar-dummy.m"; sourceTree = "<group>"; };
 		0DE6180BF67259BF3CBA290165E04F84 /* Pods-LPSnackbarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPSnackbarExample.release.xcconfig"; sourceTree = "<group>"; };
-		10AB282C7CB81350CD9477EBCB6D502E /* LPSnackbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPSnackbar.modulemap; sourceTree = "<group>"; };
 		18CE7253036CA5CBC2B5644271391FEB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9B702FD9710B687CB505E701F44D2D /* Pods-LPSnackbarExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPSnackbarExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		24570A09A94B9DB6015C740D9B3494EA /* LPSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPSnackbar-prefix.pch"; sourceTree = "<group>"; };
-		2C39B9400061C9CB6552B214DD7EBF02 /* LPSnackbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPSnackbar-umbrella.h"; sourceTree = "<group>"; };
-		3CD7266EEDACA2FBC257534ACBB5ED02 /* LPSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LPSnackbar.swift; sourceTree = "<group>"; };
-		3CE2BC959A0AD8DCCA305694C3B135EA /* LPSnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPSnackbar.xcconfig; sourceTree = "<group>"; };
+		3BA9FE57D7186500AF0DB6B4B19A613D /* LPSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPSnackbar-prefix.pch"; sourceTree = "<group>"; };
 		42ABE85284CDEB34B3CC35942A891166 /* Pods-LPSnackbarExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LPSnackbarExample-umbrella.h"; sourceTree = "<group>"; };
-		4E790880168B4F5DF4C2C8E01C2C5966 /* LPSnackbarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LPSnackbarView.swift; sourceTree = "<group>"; };
 		55518935EC0D518A96EB6878D9EF9455 /* Pods-LPSnackbarExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPSnackbarExample-frameworks.sh"; sourceTree = "<group>"; };
+		59B15D3F3F0AA6D1ED456F14FB8E251F /* LPSnackbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPSnackbar-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6947CA46368E77F731B2F2C56600DF05 /* Pods-LPSnackbarExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPSnackbarExample-dummy.m"; sourceTree = "<group>"; };
-		7A6B8720399DC49A27CA87EE7D9F94DB /* LPSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPSnackbar.h; sourceTree = "<group>"; };
-		82D18824C44DDB2ABA2AC2B652DFEF31 /* LPSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPSnackbar-dummy.m"; sourceTree = "<group>"; };
+		838D29F6CFFE7DFE082B2387A3AEFC91 /* LPSnackbarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LPSnackbarView.swift; path = LPSnackbar/LPSnackbarView.swift; sourceTree = "<group>"; };
 		92BFA9E37CDE2DFC29329AB275751956 /* Pods-LPSnackbarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPSnackbarExample.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9517BF8C334A829C2D1A92B1D7E6509D /* Pods_LPSnackbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LPSnackbarExample.framework; path = "Pods-LPSnackbarExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA3D4A77C482248F571F850432B3AEC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9517BF8C334A829C2D1A92B1D7E6509D /* Pods_LPSnackbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPSnackbarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16DFC415822AF8ED4EC4AD2FFD01A72 /* Pods-LPSnackbarExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LPSnackbarExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E1FF26623E177FBA5C8E549C6AB1E618 /* Pods-LPSnackbarExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LPSnackbarExample.modulemap"; sourceTree = "<group>"; };
-		EF54C39DE839B61E03E2D89023F4A40B /* LPSnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPSnackbar.framework; path = LPSnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7581CB3F04DBC48B63343659114402D /* LPSnackbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPSnackbar.modulemap; sourceTree = "<group>"; };
+		CCEEEB0FB5253BF1B3AC604A9A85C344 /* LPSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LPSnackbar.swift; path = LPSnackbar/LPSnackbar.swift; sourceTree = "<group>"; };
+		E1FF26623E177FBA5C8E549C6AB1E618 /* Pods-LPSnackbarExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LPSnackbarExample.modulemap"; sourceTree = "<group>"; };
+		E4E2478E9FDD550B9F5A95B3D3AD9175 /* LPSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPSnackbar.h; path = LPSnackbar/LPSnackbar.h; sourceTree = "<group>"; };
+		EF54C39DE839B61E03E2D89023F4A40B /* LPSnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPSnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F280C348C5C6301A5CBAA4C109C7396B /* Pods-LPSnackbarExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPSnackbarExample-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D1E45ABA4D1DD7CEA4AC020439929B7 /* LPSnackbar */ = {
+			isa = PBXGroup;
+			children = (
+				E4E2478E9FDD550B9F5A95B3D3AD9175 /* LPSnackbar.h */,
+				CCEEEB0FB5253BF1B3AC604A9A85C344 /* LPSnackbar.swift */,
+				838D29F6CFFE7DFE082B2387A3AEFC91 /* LPSnackbarView.swift */,
+				6C5423FF02E1943198B6918815D22D45 /* Support Files */,
+			);
+			path = LPSnackbar;
+			sourceTree = "<group>";
+		};
 		41BB648DF340E5112202EE6ADD5CF3CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,29 +94,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4B39069C7A76248BA7281A90B8BA2B56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D1E45ABA4D1DD7CEA4AC020439929B7 /* LPSnackbar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C5423FF02E1943198B6918815D22D45 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00C4148BB83A34D88C19E6577B14D2F7 /* Info.plist */,
+				C7581CB3F04DBC48B63343659114402D /* LPSnackbar.modulemap */,
+				05AFD066B3CE8F74E9DD6AF55B02A4C2 /* LPSnackbar.xcconfig */,
+				0A75A5972B7FAF1244B0585A93F8B69E /* LPSnackbar-dummy.m */,
+				3BA9FE57D7186500AF0DB6B4B19A613D /* LPSnackbar-prefix.pch */,
+				59B15D3F3F0AA6D1ED456F14FB8E251F /* LPSnackbar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LPSnackbar";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				C793B96FA7D04B453ACDEE751320D25C /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4B39069C7A76248BA7281A90B8BA2B56 /* Pods */,
 				41BB648DF340E5112202EE6ADD5CF3CF /* Products */,
 				F66482F54146264210F476EE6F3ABB91 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		AF383897054AC18730A5BAB18D8CB12A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BA3D4A77C482248F571F850432B3AEC4 /* Info.plist */,
-				10AB282C7CB81350CD9477EBCB6D502E /* LPSnackbar.modulemap */,
-				3CE2BC959A0AD8DCCA305694C3B135EA /* LPSnackbar.xcconfig */,
-				82D18824C44DDB2ABA2AC2B652DFEF31 /* LPSnackbar-dummy.m */,
-				24570A09A94B9DB6015C740D9B3494EA /* LPSnackbar-prefix.pch */,
-				2C39B9400061C9CB6552B214DD7EBF02 /* LPSnackbar-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LPSnackbar";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -114,14 +133,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C793B96FA7D04B453ACDEE751320D25C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F3FA1AEBFC04A4EB219898E017BB88A3 /* LPSnackbar */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -150,27 +161,6 @@
 			path = "Target Support Files/Pods-LPSnackbarExample";
 			sourceTree = "<group>";
 		};
-		E2C8EC96379E4A004AA9D8E20ABBD7A4 /* LPSnackbar */ = {
-			isa = PBXGroup;
-			children = (
-				7A6B8720399DC49A27CA87EE7D9F94DB /* LPSnackbar.h */,
-				3CD7266EEDACA2FBC257534ACBB5ED02 /* LPSnackbar.swift */,
-				4E790880168B4F5DF4C2C8E01C2C5966 /* LPSnackbarView.swift */,
-			);
-			name = LPSnackbar;
-			path = LPSnackbar;
-			sourceTree = "<group>";
-		};
-		F3FA1AEBFC04A4EB219898E017BB88A3 /* LPSnackbar */ = {
-			isa = PBXGroup;
-			children = (
-				E2C8EC96379E4A004AA9D8E20ABBD7A4 /* LPSnackbar */,
-				AF383897054AC18730A5BAB18D8CB12A /* Support Files */,
-			);
-			name = LPSnackbar;
-			path = /Users/luis/Programming/iOS/LPSnackbar;
-			sourceTree = "<absolute>";
-		};
 		F66482F54146264210F476EE6F3ABB91 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,12 +172,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2EFA6120033F7AB03F99F99E4E06D531 /* Headers */ = {
+		39179CDDDFB749F1504F366E27070F5E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01491884AE0AAEDF2C6F9CBA85D72586 /* LPSnackbar-umbrella.h in Headers */,
-				9DEE77035894EBFA5AB6D6DAB7CF6DCB /* LPSnackbar.h in Headers */,
+				E38EA5DDD8D0AD10A40C7ED849D43013 /* LPSnackbar-umbrella.h in Headers */,
+				F4027F184FC2377C5A2E6E11B49E6BF7 /* LPSnackbar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +196,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4886435DF594A5DD28183C7BB2F1FA43 /* Build configuration list for PBXNativeTarget "LPSnackbar" */;
 			buildPhases = (
-				F502B24C0AC7265FD26049A7057EF896 /* Sources */,
+				D3544FFB4835CB9AFCD8D5C837B5CA54 /* Sources */,
 				FE5AB4A41250BB572141A617BCB895A7 /* Frameworks */,
-				2EFA6120033F7AB03F99F99E4E06D531 /* Headers */,
+				39179CDDDFB749F1504F366E27070F5E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -244,7 +234,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -273,13 +263,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F502B24C0AC7265FD26049A7057EF896 /* Sources */ = {
+		D3544FFB4835CB9AFCD8D5C837B5CA54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB480C7F10E7330B4A8BA76BC4C4A1F /* LPSnackbar-dummy.m in Sources */,
-				4CF7729133D44989EA718F1A178CD957 /* LPSnackbar.swift in Sources */,
-				BE241FDAB4D122FC7A51FE469AC22A23 /* LPSnackbarView.swift in Sources */,
+				73C8C4FA03514665F62521904B9B9388 /* LPSnackbar-dummy.m in Sources */,
+				882D6BD1C9F3B612A0278EF8983249C7 /* LPSnackbar.swift in Sources */,
+				0874BECFDC216052B8796F1EF8FEDBED /* LPSnackbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +295,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -313,15 +305,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -393,7 +391,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -401,14 +401,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -429,7 +435,7 @@
 		};
 		4CB4F00BAD464782EB52224E26135F86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CE2BC959A0AD8DCCA305694C3B135EA /* LPSnackbar.xcconfig */;
+			baseConfigurationReference = 05AFD066B3CE8F74E9DD6AF55B02A4C2 /* LPSnackbar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -464,7 +470,7 @@
 		};
 		8A9EEAA37E6BC839BE072FB4CF9996E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CE2BC959A0AD8DCCA305694C3B135EA /* LPSnackbar.xcconfig */;
+			baseConfigurationReference = 05AFD066B3CE8F74E9DD6AF55B02A4C2 /* LPSnackbar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -6,6 +6,6 @@ target 'LPSnackbarExample' do
   use_frameworks!
 
   # Pods for LPSnackbarExample
-  pod 'LPSnackbar', :path => '~/Programming/iOS/LPSnackbar'
+  pod 'LPSnackbar'
 
 end
