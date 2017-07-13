@@ -56,8 +56,14 @@ class ViewController: UITableViewController {
                 
                 // Action waas undone, lets readd the cell back
                 self.tableView.beginUpdates()
-                self.snacks.insert(removedSnack, at: path.row)
-                self.tableView.insertRows(at: [path], with: .automatic)
+                if path.row > self.snacks.count {
+                    self.snacks.append(removedSnack)
+                    self.tableView.insertRows(at: [IndexPath(row: self.snacks.count - 1, section: 0)], with: .automatic)
+                } else {
+                    self.snacks.insert(removedSnack, at: path.row)
+                    self.tableView.insertRows(at: [path], with: .automatic)
+                }
+                
                 self.tableView.endUpdates()
             }
         }

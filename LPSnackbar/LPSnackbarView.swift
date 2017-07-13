@@ -98,7 +98,7 @@ open class LPSnackbarView: UIView {
         initialize()
     }
     
-    /// Overriden 
+    /// Overriden
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
