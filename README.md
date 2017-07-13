@@ -28,9 +28,9 @@
 
 	```ruby
 	target 'Example' do
-		use_frameworks!
+	  use_frameworks!
 
-		pod 'LPSnackbar'
+	  pod 'LPSnackbar'
 	end
 	```
 3. Run `pod install`.
