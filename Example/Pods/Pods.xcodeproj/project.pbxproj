@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01491884AE0AAEDF2C6F9CBA85D72586 /* LPSnackbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C39B9400061C9CB6552B214DD7EBF02 /* LPSnackbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CF7729133D44989EA718F1A178CD957 /* LPSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7266EEDACA2FBC257534ACBB5ED02 /* LPSnackbar.swift */; };
+		9DEE77035894EBFA5AB6D6DAB7CF6DCB /* LPSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A6B8720399DC49A27CA87EE7D9F94DB /* LPSnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0D8F2CD989CD3CB2449F0C210174EC7 /* Pods-LPSnackbarExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6947CA46368E77F731B2F2C56600DF05 /* Pods-LPSnackbarExample-dummy.m */; };
+		ADB480C7F10E7330B4A8BA76BC4C4A1F /* LPSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D18824C44DDB2ABA2AC2B652DFEF31 /* LPSnackbar-dummy.m */; };
+		BE241FDAB4D122FC7A51FE469AC22A23 /* LPSnackbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E790880168B4F5DF4C2C8E01C2C5966 /* LPSnackbarView.swift */; };
+		BEB6EF5A87869AD7F90D8E77E8AB2155 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DBDB369B7AEC326091C6265083E8049D /* Pods-LPSnackbarExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ABE85284CDEB34B3CC35942A891166 /* Pods-LPSnackbarExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F60CA2D40BB17707EE643D761A2E28CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06F121243B922115E9DA1EE45E3A5DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9B5F4B9176FF3E82BFFB063F46FF70E;
+			remoteInfo = LPSnackbar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DE6180BF67259BF3CBA290165E04F84 /* Pods-LPSnackbarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPSnackbarExample.release.xcconfig"; sourceTree = "<group>"; };
+		10AB282C7CB81350CD9477EBCB6D502E /* LPSnackbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPSnackbar.modulemap; sourceTree = "<group>"; };
+		18CE7253036CA5CBC2B5644271391FEB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9B702FD9710B687CB505E701F44D2D /* Pods-LPSnackbarExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPSnackbarExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		24570A09A94B9DB6015C740D9B3494EA /* LPSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPSnackbar-prefix.pch"; sourceTree = "<group>"; };
+		2C39B9400061C9CB6552B214DD7EBF02 /* LPSnackbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPSnackbar-umbrella.h"; sourceTree = "<group>"; };
+		3CD7266EEDACA2FBC257534ACBB5ED02 /* LPSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LPSnackbar.swift; sourceTree = "<group>"; };
+		3CE2BC959A0AD8DCCA305694C3B135EA /* LPSnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPSnackbar.xcconfig; sourceTree = "<group>"; };
+		42ABE85284CDEB34B3CC35942A891166 /* Pods-LPSnackbarExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LPSnackbarExample-umbrella.h"; sourceTree = "<group>"; };
+		4E790880168B4F5DF4C2C8E01C2C5966 /* LPSnackbarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LPSnackbarView.swift; sourceTree = "<group>"; };
+		55518935EC0D518A96EB6878D9EF9455 /* Pods-LPSnackbarExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPSnackbarExample-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6947CA46368E77F731B2F2C56600DF05 /* Pods-LPSnackbarExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPSnackbarExample-dummy.m"; sourceTree = "<group>"; };
+		7A6B8720399DC49A27CA87EE7D9F94DB /* LPSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPSnackbar.h; sourceTree = "<group>"; };
+		82D18824C44DDB2ABA2AC2B652DFEF31 /* LPSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPSnackbar-dummy.m"; sourceTree = "<group>"; };
+		92BFA9E37CDE2DFC29329AB275751956 /* Pods-LPSnackbarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPSnackbarExample.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9517BF8C334A829C2D1A92B1D7E6509D /* Pods_LPSnackbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LPSnackbarExample.framework; path = "Pods-LPSnackbarExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3D4A77C482248F571F850432B3AEC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C16DFC415822AF8ED4EC4AD2FFD01A72 /* Pods-LPSnackbarExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LPSnackbarExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1FF26623E177FBA5C8E549C6AB1E618 /* Pods-LPSnackbarExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LPSnackbarExample.modulemap"; sourceTree = "<group>"; };
+		EF54C39DE839B61E03E2D89023F4A40B /* LPSnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPSnackbar.framework; path = LPSnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F280C348C5C6301A5CBAA4C109C7396B /* Pods-LPSnackbarExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPSnackbarExample-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F8DD8403D96F87474B640B7BB5921D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60CA2D40BB17707EE643D761A2E28CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5AB4A41250BB572141A617BCB895A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB6EF5A87869AD7F90D8E77E8AB2155 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41BB648DF340E5112202EE6ADD5CF3CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF54C39DE839B61E03E2D89023F4A40B /* LPSnackbar.framework */,
+				9517BF8C334A829C2D1A92B1D7E6509D /* Pods_LPSnackbarExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C793B96FA7D04B453ACDEE751320D25C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				41BB648DF340E5112202EE6ADD5CF3CF /* Products */,
+				F66482F54146264210F476EE6F3ABB91 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AF383897054AC18730A5BAB18D8CB12A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA3D4A77C482248F571F850432B3AEC4 /* Info.plist */,
+				10AB282C7CB81350CD9477EBCB6D502E /* LPSnackbar.modulemap */,
+				3CE2BC959A0AD8DCCA305694C3B135EA /* LPSnackbar.xcconfig */,
+				82D18824C44DDB2ABA2AC2B652DFEF31 /* LPSnackbar-dummy.m */,
+				24570A09A94B9DB6015C740D9B3494EA /* LPSnackbar-prefix.pch */,
+				2C39B9400061C9CB6552B214DD7EBF02 /* LPSnackbar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LPSnackbar";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C793B96FA7D04B453ACDEE751320D25C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3FA1AEBFC04A4EB219898E017BB88A3 /* LPSnackbar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DD2F7225F57748465BF1ADEA822DF540 /* Pods-LPSnackbarExample */ = {
+			isa = PBXGroup;
+			children = (
+				18CE7253036CA5CBC2B5644271391FEB /* Info.plist */,
+				E1FF26623E177FBA5C8E549C6AB1E618 /* Pods-LPSnackbarExample.modulemap */,
+				C16DFC415822AF8ED4EC4AD2FFD01A72 /* Pods-LPSnackbarExample-acknowledgements.markdown */,
+				1B9B702FD9710B687CB505E701F44D2D /* Pods-LPSnackbarExample-acknowledgements.plist */,
+				6947CA46368E77F731B2F2C56600DF05 /* Pods-LPSnackbarExample-dummy.m */,
+				55518935EC0D518A96EB6878D9EF9455 /* Pods-LPSnackbarExample-frameworks.sh */,
+				F280C348C5C6301A5CBAA4C109C7396B /* Pods-LPSnackbarExample-resources.sh */,
+				42ABE85284CDEB34B3CC35942A891166 /* Pods-LPSnackbarExample-umbrella.h */,
+				92BFA9E37CDE2DFC29329AB275751956 /* Pods-LPSnackbarExample.debug.xcconfig */,
+				0DE6180BF67259BF3CBA290165E04F84 /* Pods-LPSnackbarExample.release.xcconfig */,
+			);
+			name = "Pods-LPSnackbarExample";
+			path = "Target Support Files/Pods-LPSnackbarExample";
+			sourceTree = "<group>";
+		};
+		E2C8EC96379E4A004AA9D8E20ABBD7A4 /* LPSnackbar */ = {
+			isa = PBXGroup;
+			children = (
+				7A6B8720399DC49A27CA87EE7D9F94DB /* LPSnackbar.h */,
+				3CD7266EEDACA2FBC257534ACBB5ED02 /* LPSnackbar.swift */,
+				4E790880168B4F5DF4C2C8E01C2C5966 /* LPSnackbarView.swift */,
+			);
+			name = LPSnackbar;
+			path = LPSnackbar;
+			sourceTree = "<group>";
+		};
+		F3FA1AEBFC04A4EB219898E017BB88A3 /* LPSnackbar */ = {
+			isa = PBXGroup;
+			children = (
+				E2C8EC96379E4A004AA9D8E20ABBD7A4 /* LPSnackbar */,
+				AF383897054AC18730A5BAB18D8CB12A /* Support Files */,
+			);
+			name = LPSnackbar;
+			path = /Users/luis/Programming/iOS/LPSnackbar;
+			sourceTree = "<absolute>";
+		};
+		F66482F54146264210F476EE6F3ABB91 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F7225F57748465BF1ADEA822DF540 /* Pods-LPSnackbarExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2EFA6120033F7AB03F99F99E4E06D531 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01491884AE0AAEDF2C6F9CBA85D72586 /* LPSnackbar-umbrella.h in Headers */,
+				9DEE77035894EBFA5AB6D6DAB7CF6DCB /* LPSnackbar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829575FAC7BA8AEE0EBCFC68D0118C2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDB369B7AEC326091C6265083E8049D /* Pods-LPSnackbarExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A9B5F4B9176FF3E82BFFB063F46FF70E /* LPSnackbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4886435DF594A5DD28183C7BB2F1FA43 /* Build configuration list for PBXNativeTarget "LPSnackbar" */;
+			buildPhases = (
+				F502B24C0AC7265FD26049A7057EF896 /* Sources */,
+				FE5AB4A41250BB572141A617BCB895A7 /* Frameworks */,
+				2EFA6120033F7AB03F99F99E4E06D531 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPSnackbar;
+			productName = LPSnackbar;
+			productReference = EF54C39DE839B61E03E2D89023F4A40B /* LPSnackbar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5606879FAF4B2AB56A58399B6AD4FF5 /* Pods-LPSnackbarExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A416B4CE245A1D2A41347EB9803479A5 /* Build configuration list for PBXNativeTarget "Pods-LPSnackbarExample" */;
+			buildPhases = (
+				CEBED8C2FDA69D1DB155516CD36488F2 /* Sources */,
+				8F8DD8403D96F87474B640B7BB5921D7 /* Frameworks */,
+				829575FAC7BA8AEE0EBCFC68D0118C2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F42A189DA59361D93B5DDC4122429D0 /* PBXTargetDependency */,
+			);
+			name = "Pods-LPSnackbarExample";
+			productName = "Pods-LPSnackbarExample";
+			productReference = 9517BF8C334A829C2D1A92B1D7E6509D /* Pods_LPSnackbarExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 41BB648DF340E5112202EE6ADD5CF3CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B5F4B9176FF3E82BFFB063F46FF70E /* LPSnackbar */,
+				D5606879FAF4B2AB56A58399B6AD4FF5 /* Pods-LPSnackbarExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEBED8C2FDA69D1DB155516CD36488F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D8F2CD989CD3CB2449F0C210174EC7 /* Pods-LPSnackbarExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F502B24C0AC7265FD26049A7057EF896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB480C7F10E7330B4A8BA76BC4C4A1F /* LPSnackbar-dummy.m in Sources */,
+				4CF7729133D44989EA718F1A178CD957 /* LPSnackbar.swift in Sources */,
+				BE241FDAB4D122FC7A51FE469AC22A23 /* LPSnackbarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F42A189DA59361D93B5DDC4122429D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LPSnackbar;
+			target = A9B5F4B9176FF3E82BFFB063F46FF70E /* LPSnackbar */;
+			targetProxy = 06F121243B922115E9DA1EE45E3A5DC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2AEEAC51190A0D47B5F9C995B8E62591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BFA9E37CDE2DFC29329AB275751956 /* Pods-LPSnackbarExample.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LPSnackbarExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LPSnackbarExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CB4F00BAD464782EB52224E26135F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE2BC959A0AD8DCCA305694C3B135EA /* LPSnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LPSnackbar/LPSnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPSnackbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LPSnackbar/LPSnackbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LPSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A9EEAA37E6BC839BE072FB4CF9996E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE2BC959A0AD8DCCA305694C3B135EA /* LPSnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LPSnackbar/LPSnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPSnackbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LPSnackbar/LPSnackbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LPSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5F82CB3DC08D6C1824CCB572DED28B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE6180BF67259BF3CBA290165E04F84 /* Pods-LPSnackbarExample.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LPSnackbarExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LPSnackbarExample/Pods-LPSnackbarExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LPSnackbarExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4886435DF594A5DD28183C7BB2F1FA43 /* Build configuration list for PBXNativeTarget "LPSnackbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A9EEAA37E6BC839BE072FB4CF9996E7 /* Debug */,
+				4CB4F00BAD464782EB52224E26135F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A416B4CE245A1D2A41347EB9803479A5 /* Build configuration list for PBXNativeTarget "Pods-LPSnackbarExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AEEAC51190A0D47B5F9C995B8E62591 /* Debug */,
+				C5F82CB3DC08D6C1824CCB572DED28B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

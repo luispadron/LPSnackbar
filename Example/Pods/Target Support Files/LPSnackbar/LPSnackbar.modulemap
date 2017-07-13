@@ -1,0 +1,6 @@
+framework module LPSnackbar {
+  umbrella header "LPSnackbar-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -75,9 +75,10 @@
 		A0B625A41F18162B00814C2E /* LPSnackbar */ = {
 			isa = PBXGroup;
 			children = (
+				A0B625BD1F18165C00814C2E /* LPSnackbar.swift */,
+				A0B625BF1F18166A00814C2E /* LPSnackbarView.swift */,
 				A0B625A51F18162B00814C2E /* LPSnackbar.h */,
 				A0B625A61F18162B00814C2E /* Info.plist */,
-				A0B625BC1F18163D00814C2E /* Source */,
 			);
 			path = LPSnackbar;
 			sourceTree = "<group>";
@@ -89,15 +90,6 @@
 				A0B625B21F18162B00814C2E /* Info.plist */,
 			);
 			path = LPSnackbarTests;
-			sourceTree = "<group>";
-		};
-		A0B625BC1F18163D00814C2E /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				A0B625BD1F18165C00814C2E /* LPSnackbar.swift */,
-				A0B625BF1F18166A00814C2E /* LPSnackbarView.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
