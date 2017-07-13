@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/luispadron/LPSnackbar"
-  #s.screenshots  = ""
+  s.screenshots  = "https://raw.githubusercontent.com/luispadron/LPSnackbar/master/.github/Screen1.png"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
