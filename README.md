@@ -44,7 +44,7 @@
 
 ## Usage
 
-Snacks can be simple to use
+Snacks can be simple
 
 ```swift
 // Yes, this simple.
@@ -71,8 +71,8 @@ snack.show(animated: true) { (undone) in
 
 ## Example
 
-Downloads the example project!
+Download and run the example project
 
 ## Documentation
 
-Full documentation available [here](#)
+Full documentation available [here](https://htmlpreview.github.io/?https://github.com/luispadron/LPSnackbar/blob/master/docs/index.html)
