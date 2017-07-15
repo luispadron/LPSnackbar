@@ -1,3 +1,9 @@
+# LPSnackbar CHANGELOG
+
+## Version 1.1.2
+
+- Fix issue where `LPSnackbarView`'s subviews were not accessible with accessibility.
+
 ## Version 1.1.1
 
 - Fix bug where `displayTimer` was not being invalidated when calling `dismiss(animated:completeWithAction)`. This bug caused the `SnackbarCompletion` to be called twice.
