@@ -240,6 +240,8 @@ open class LPSnackbar: Equatable {
     /// Prepares the `LPSnackbar` for removal
     private func prepareForRemoval() {
         NotificationCenter.default.removeObserver(self)
+        displayTimer?.invalidate()
+        displayTimer = nil
         view.controller = nil
         view.removeFromSuperview()
     }
@@ -415,6 +417,10 @@ open class LPSnackbar: Equatable {
             self.viewButtonTapped()
             return
         }
+        
+        // Invalidate timer
+        displayTimer?.invalidate()
+        displayTimer = nil
         
         if animated {
             self.animateOut()
