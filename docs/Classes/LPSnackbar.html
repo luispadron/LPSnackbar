@@ -47,7 +47,7 @@
             <h1>LPSnackbar</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">LPSnackbar</span></code></pre>
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">LPSnackbar</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                 </div>
               </div>
@@ -412,9 +412,9 @@ so that the snack is presented above the bar.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10LPSnackbarAAC7dismissySb8animated_tF"></a>
-                    <a name="//apple_ref/swift/Method/dismiss(animated:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10LPSnackbarAAC7dismissySb8animated_tF">dismiss(animated:)</a>
+                    <a name="/s:10LPSnackbarAAC7dismissySb8animated_Sb18completeWithActiontF"></a>
+                    <a name="//apple_ref/swift/Method/dismiss(animated:completeWithAction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC7dismissySb8animated_Sb18completeWithActiontF">dismiss(animated:completeWithAction:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -422,14 +422,20 @@ so that the snack is presented above the bar.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Dismisses the snack from the screen</p>
+                        <p>Allows you to manually dismiss the snack from the screen.</p>
+
+<ul>
+<li><p><code>animated</code>: Whether or not to animate the view out.</p></li>
+<li><p><code>completeWithAction</code>: Whether or not if when dismissing, you want to pass true to the <code><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC18SnackbarCompletiona">SnackbarCompletion</a></code>, which
+                    means that it will act as if the button was pressed by the user.</p></li>
+</ul>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">dismiss</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">dismiss</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completeWithAction</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -503,10 +509,48 @@ so that the snack is presented above the bar.</p>
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Equatable"></a>
+                <a name="//apple_ref/swift/Section/Equatable" class="dashAnchor"></a>
+                <a href="#/Equatable">
+                  <h3 class="section-name">Equatable</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10LPSnackbarAAC2eeoiSbAB_ABtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC2eeoiSbAB_ABtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns equals if and only if <code>lhs</code> and <code>rhs</code> are the same object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">LPSnackbar</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">LPSnackbar</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://luispadron.com" target="_blank" rel="external">Luis</a>. All rights reserved. (Last updated: 2017-07-13)</p>
+          <p>&copy; 2017 <a class="link" href="https://luispadron.com" target="_blank" rel="external">Luis</a>. All rights reserved. (Last updated: 2017-07-15)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

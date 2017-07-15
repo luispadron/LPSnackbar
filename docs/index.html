@@ -44,21 +44,78 @@
         <section>
           <section class="section">
             
-            <h1 id='lpsnackbar' class='heading'>LPSnackbar</h1>
-<h3 id='a-flexible-and-easy-to-use-snackbar-control-for-ios' class='heading'>A flexible and easy to use Snackbar control for iOS.</h3>
+            <h2 id='lpsnackbar' class='heading'>LPSnackbar</h2>
 
-<p>Flexible and customizable Android inspired Snackbar control for iOS devices.</p>
-<h3 id='installation' class='heading'>Installation</h3>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'LPSnackbar'</span>
+<p align="center">
+<img src="https://raw.githubusercontent.com/luispadron/LPSnackbar/master/.github/Screen1.png"/>  
+</p>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>Flexible, easy to use and customizable.</li>
+<li><p><em>Snacks</em> are actionable.</p>
+
+<p><img src="https://raw.githubusercontent.com/luispadron/LPSnackbar/master/.github/Demo1.gif" width="350"/>  </p></li>
+<li><p><em>Snacks</em> are stackable and swipeable.</p>
+
+<p><img src="https://raw.githubusercontent.com/luispadron/LPSnackbar/master/.github/Demo2.gif" width="350"/>  </p></li>
+<li><p>Supports iOS 8.0 +</p></li>
+<li><p>Written with the latest Swift (Swift 4)</p></li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods-recommended' class='heading'>Cocoapods (recommended)</h3>
+
+<ol>
+<li>Install <a href="https://cocoapods.org">CocoaPods</a>.</li>
+<li><p>Add this pod to your <code>Podfile</code>.</p>
+<pre class="highlight ruby"><code><span class="n">target</span> <span class="s1">'Example'</span> <span class="k">do</span>
+  <span class="n">use_frameworks!</span>
+
+  <span class="n">pod</span> <span class="s1">'LPSnackbar'</span>
+<span class="k">end</span>
+</code></pre></li>
+<li><p>Run <code>pod install</code>.</p></li>
+<li><p>Open up the <code>.xcworkspace</code> that CocoaPods created.</p></li>
+<li><p>Import <code>LPSnackbar</code> into any source file where it&rsquo;s needed.</p></li>
+</ol>
+<h3 id='from-source' class='heading'>From Source</h3>
+
+<ol>
+<li>Simply download the source from <a href="https://github.com/luispadron/LPSnackbar/tree/master/LPSnackbar">here</a> and add it to your Xcode project.</li>
+</ol>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Snacks can be simple</p>
+<pre class="highlight swift"><code><span class="c1">// Yes, this simple.</span>
+<span class="kt">LPSnackbar</span><span class="o">.</span><span class="nf">showSnack</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"I'm a snack!"</span><span class="p">)</span>
 </code></pre>
-<h3 id='authors' class='heading'>Authors</h3>
 
-<p>Luis</p>
+<p>Snacks can be customized</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">snack</span> <span class="o">=</span> <span class="kt">LPSnackbar</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Object deleted."</span><span class="p">,</span> <span class="nv">buttonTitle</span><span class="p">:</span> <span class="s">"UNDO"</span><span class="p">)</span>
+<span class="c1">// Customize the snack</span>
+<span class="n">snack</span><span class="o">.</span><span class="n">bottomSpacing</span> <span class="o">=</span> <span class="p">(</span><span class="n">tabBarController</span><span class="p">?</span><span class="o">.</span><span class="n">tabBar</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">height</span> <span class="p">??</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">15</span>
+<span class="n">snack</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">titleLabel</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="kt">UIFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="c1">// Show a snack to allow user to undo deletion</span>
+<span class="n">snack</span><span class="o">.</span><span class="nf">show</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">undone</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="n">undone</span> <span class="p">{</span>
+        <span class="c1">// Undo deletion</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Follow through with deletion</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>Download and run the example project</p>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p>Full documentation available <a href="https://htmlpreview.github.io/?https://github.com/luispadron/LPSnackbar/blob/master/docs/index.html">here</a></p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://luispadron.com" target="_blank" rel="external">Luis</a>. All rights reserved. (Last updated: 2017-07-13)</p>
+          <p>&copy; 2017 <a class="link" href="https://luispadron.com" target="_blank" rel="external">Luis</a>. All rights reserved. (Last updated: 2017-07-15)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

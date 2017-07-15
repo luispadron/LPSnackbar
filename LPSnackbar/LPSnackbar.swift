@@ -31,7 +31,7 @@ import UIKit
  This class handles everything that has to do with showing, dismissing and performing actions in a `LPSnackbarView`.
  There are several static helper methods, which allow presenting a basic snack without needing instantiate an `LPSnackbar` yourself.
  */
-open class LPSnackbar {
+open class LPSnackbar: Equatable {
     
     // MARK: Public Members
     
@@ -402,8 +402,20 @@ open class LPSnackbar {
         }
     }
     
-    /// Dismisses the snack from the screen
-    open func dismiss(animated: Bool = true) {
+    /**
+     Allows you to manually dismiss the snack from the screen.
+
+     - `animated`: Whether or not to animate the view out.
+     
+     - `completeWithAction`: Whether or not if when dismissing, you want to pass true to the `SnackbarCompletion`, which
+                             means that it will act as if the button was pressed by the user.
+     */
+    open func dismiss(animated: Bool = true, completeWithAction: Bool = false) {
+        guard !completeWithAction else {
+            self.viewButtonTapped()
+            return
+        }
+        
         if animated {
             self.animateOut()
         } else {
@@ -428,5 +440,11 @@ open class LPSnackbar {
             completion?(false)
         }
     }
+    
+    // MARK: Equatable
+    
+    /// Returns equals if and only if `lhs` and `rhs` are the same object.
+    open static func ==(lhs: LPSnackbar, rhs: LPSnackbar) -> Bool {
+        return lhs === rhs
+    }
 }
-
