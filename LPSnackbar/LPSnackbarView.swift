@@ -90,6 +90,9 @@ open class LPSnackbarView: UIView {
         }
     }
     
+    /// The default opacity for the view
+    internal let defaultOpacity: Float = 0.98
+    
     // MARK: Overrides
     
     /// Overriden
@@ -132,7 +135,7 @@ open class LPSnackbarView: UIView {
         // Customize UI
         autoresizingMask = [.flexibleWidth, .flexibleHeight]
         backgroundColor = UIColor(red: 0.184, green: 0.184, blue: 0.184, alpha: 1.00)
-        layer.opacity = 0.98
+        layer.opacity = defaultOpacity
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowRadius = 5.0
         layer.shadowOpacity = 0.4

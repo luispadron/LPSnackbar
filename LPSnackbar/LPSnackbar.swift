@@ -113,9 +113,6 @@ open class LPSnackbar: Equatable {
     /// The timer responsible for notifying about when the view needs to be removed.
     private var displayTimer: Timer?
     
-    /// How long the view will be presented for.
-    private var displayDuration: TimeInterval?
-    
     /// Whether or not the view was initially animated, this is used when animating out the view.
     private var wasAnimated: Bool = false
     
@@ -131,11 +128,8 @@ open class LPSnackbar: Equatable {
      
      If `buttonTitle` is `nil`, no button will be displayed.
      
-     If `displayDuration` is `nil`, the view will not be removed unless swiped away or button is pressed.
      */
-    public init (title: String, buttonTitle: String?, displayDuration: TimeInterval? = 5.0) {
-        self.displayDuration = displayDuration
-        
+    public init (title: String, buttonTitle: String?) {
         // Set labels/buttons
         view.titleLabel.text = title
         
@@ -157,11 +151,8 @@ open class LPSnackbar: Equatable {
      
      If `attributedButtonTitle` is `nil`, no button will be displayed.
      
-     If `displayDuration` is `nil`, the view will not be removed unless swiped away or button is pressed.
      */
-    public init(attributedTitle: NSAttributedString, attributedButtonTitle: NSAttributedString?, displayDuration: TimeInterval? = 5.0) {
-        self.displayDuration = displayDuration
-        
+    public init(attributedTitle: NSAttributedString, attributedButtonTitle: NSAttributedString?) {
         // Set labels/buttons
         view.titleLabel.attributedText = attributedTitle
         
@@ -178,15 +169,6 @@ open class LPSnackbar: Equatable {
     
     /// Helper method which creates the timer (if needed) and adds the swipe gestures to the view
     private func finishInit() {
-        // Set timer for when view will be removed
-        if let duration = displayDuration {
-            displayTimer = Timer.scheduledTimer(timeInterval: duration,
-                                                target: self,
-                                                selector: #selector(self.timerDidFinish),
-                                                userInfo: nil,
-                                                repeats: false)
-        }
-        
         // Add gesture recognizers for swipes
         let left = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes(sender:)))
         left.direction = .left
@@ -237,13 +219,11 @@ open class LPSnackbar: Equatable {
         return CGRect(x: startX, y: startY, width: width, height: height)
     }
     
-    /// Prepares the `LPSnackbar` for removal
-    private func prepareForRemoval() {
-        NotificationCenter.default.removeObserver(self)
+    /// Removes the snack view from the super view and invalidates any timers.
+    private func removeSnack() {
+        view.removeFromSuperview()
         displayTimer?.invalidate()
         displayTimer = nil
-        view.controller = nil
-        view.removeFromSuperview()
     }
     
     // MARK: Animation
@@ -255,7 +235,6 @@ open class LPSnackbar: Equatable {
         let outY = frame.origin.y + height + bottomSpacing
         // Set up view outside the frame, then animate it back in
         view.isHidden = false
-        let oldOpacity = view.layer.opacity
         view.layer.opacity = 0.0
         view.frame = CGRect(x: frame.origin.x, y: outY, width: frame.width, height: frame.height)
         
@@ -267,7 +246,7 @@ open class LPSnackbar: Equatable {
             options: .curveEaseInOut,
             animations: {
                 // Animate the view to the correct position & opacity
-                self.view.layer.opacity = oldOpacity
+                self.view.layer.opacity = self.view.defaultOpacity
                 self.view.frame = CGRect(x: frame.origin.x, y: inY, width: frame.width, height: frame.height)
         },
             completion: nil
@@ -291,8 +270,8 @@ open class LPSnackbar: Equatable {
             completion: { _ in
                 // Call the completion handler
                 self.completion?(wasButtonTapped)
-                // Prepare to deinit
-                self.prepareForRemoval()
+                // Remove view
+                self.removeSnack()
         }
         )
     }
@@ -312,8 +291,10 @@ open class LPSnackbar: Equatable {
                 self.view.frame = CGRect(origin: position, size: self.view.frame.size)
                 self.view.layer.opacity = 0.1
         }, completion: { _ in
+            // Call completion handler
             self.completion?(false)
-            self.prepareForRemoval()
+            // Remove view
+            self.removeSnack()
         }
         )
     }
@@ -327,8 +308,8 @@ open class LPSnackbar: Equatable {
         } else {
             // Call the completion handler, since no animation will be shown
             completion?(false)
-            // Prepare to deinit
-            prepareForRemoval()
+            // Remove view
+            self.removeSnack()
         }
     }
     
@@ -344,8 +325,8 @@ open class LPSnackbar: Equatable {
         } else {
             // Call the completion handler, since no animation will be shown
             completion?(true)
-            // Prepare to deinit
-            prepareForRemoval()
+            // Remove snack
+            self.removeSnack()
         }
     }
     
@@ -384,11 +365,16 @@ open class LPSnackbar: Equatable {
     
     // MARK: Public Methods
     
-    /// Presents the snack to the screen
-    open func show(animated: Bool = true, completion: SnackbarCompletion? = nil) {
+    /**
+     Presents the snack to the screen
+     - Parameters:
+        - displayDuration: How long to show the snack for, if `nil`, will show forever. Default = `5.0`
+        - animated: Whether or not the snack should animate in and out. Default = `true`
+        - completion: The completion handler for when the snack is removed/button pressed. Default = `nil`
+     */
+    open func show(displayDuration: TimeInterval? = 5.0, animated: Bool = true, completion: SnackbarCompletion? = nil) {
         guard let superview = viewToDisplayIn ?? UIApplication.shared.keyWindow ?? nil else {
-            print("Unable to get a superview, was not able to show\n Couldn't add LPSnackbarView as a subview to the main UIWindow")
-            return
+            fatalError("Unable to get a superview, was not able to show\n Couldn't add LPSnackbarView as a subview to the main UIWindow")
         }
         
         // Add as subview
@@ -396,6 +382,13 @@ open class LPSnackbar: Equatable {
         
         // Set completion and animate the view if allowed
         self.completion = completion
+        
+        // Setup timer
+        if let duration = displayDuration {
+            displayTimer = Timer.scheduledTimer(timeInterval: duration, target: self,
+                                                selector: #selector(self.timerDidFinish),
+                                                userInfo: nil, repeats: false)
+        }
         
         if animated {
             animateIn()
@@ -406,11 +399,11 @@ open class LPSnackbar: Equatable {
     
     /**
      Allows you to manually dismiss the snack from the screen.
-
+     
      - `animated`: Whether or not to animate the view out.
      
      - `completeWithAction`: Whether or not if when dismissing, you want to pass true to the `SnackbarCompletion`, which
-                             means that it will act as if the button was pressed by the user.
+     means that it will act as if the button was pressed by the user.
      */
     open func dismiss(animated: Bool = true, completeWithAction: Bool = false) {
         guard !completeWithAction else {
@@ -425,7 +418,8 @@ open class LPSnackbar: Equatable {
         if animated {
             self.animateOut()
         } else {
-            prepareForRemoval()
+            // remove the snack
+            self.removeSnack()
         }
     }
     
@@ -433,16 +427,16 @@ open class LPSnackbar: Equatable {
     
     /// Allows showing a simple snack without needing to instantiate any `LPSnackbar`
     open static func showSnack(title: String, displayDuration: TimeInterval? = 5.0, completion: SnackbarCompletion? = nil) {
-        let snack = LPSnackbar(title: title, buttonTitle: nil, displayDuration: displayDuration)
-        snack.show(animated: true) { _ in
+        let snack = LPSnackbar(title: title, buttonTitle: nil)
+        snack.show(displayDuration: displayDuration) { _ in
             completion?(false)
         }
     }
     
     /// Allows showing a simple, more customizable, snack without needing to instantiate any `LPSnackbar`
     open static func showSnack(attributedTitle: NSAttributedString, displayDuration: TimeInterval? = 5.0, completion: SnackbarCompletion? = nil) {
-        let snack = LPSnackbar(attributedTitle: attributedTitle, attributedButtonTitle: nil, displayDuration: displayDuration)
-        snack.show(animated: true) { _ in
+        let snack = LPSnackbar(attributedTitle: attributedTitle, attributedButtonTitle: nil)
+        snack.show(displayDuration: displayDuration) { _ in
             completion?(false)
         }
     }
@@ -453,4 +447,15 @@ open class LPSnackbar: Equatable {
     open static func ==(lhs: LPSnackbar, rhs: LPSnackbar) -> Bool {
         return lhs === rhs
     }
+    
+    // MARK: Cleanup
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+        displayTimer?.invalidate()
+        displayTimer = nil
+        view.controller = nil
+        view.removeFromSuperview()
+    }
 }
+
