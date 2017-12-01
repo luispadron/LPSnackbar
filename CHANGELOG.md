@@ -1,5 +1,9 @@
 # LPSnackbar CHANGELOG
 
+## Version 2.0.1
+
+- Add support for carthage by updating to `shared` scheme.
+
 ## Version 2.0
 
 #### Breaking changes and fixes.
