@@ -23,3 +23,6 @@ xcuserdata/
 *.xcscmblueprint
 .DS_Store
 
+# Carthage
+Carthage/
+*.framework.zip
