@@ -218,6 +218,35 @@ so that the snack is presented above the bar.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:10LPSnackbarAAC26adjustsPositionForSafeAreaSbv"></a>
+                    <a name="//apple_ref/swift/Property/adjustsPositionForSafeArea" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10LPSnackbarAAC26adjustsPositionForSafeAreaSbv">adjustsPositionForSafeArea</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether or not the snackbar should adjust to fit within the safe area&rsquo;s of it&rsquo;s parent view.</p>
+
+<p>Only used in iOS 11.0 +</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">adjustsPositionForSafeArea</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:10LPSnackbarAAC15viewToDisplayInSo6UIViewCSgv"></a>
                     <a name="//apple_ref/swift/Property/viewToDisplayIn" class="dashAnchor"></a>
                     <a class="token" href="#/s:10LPSnackbarAAC15viewToDisplayInSo6UIViewCSgv">viewToDisplayIn</a>
@@ -393,6 +422,12 @@ so that the snack is presented above the bar.</p>
                       <div class="abstract">
                         <p>Presents the snack to the screen</p>
 
+<ul>
+<li>displayDuration: How long to show the snack for, if <code>nil</code>, will show forever. Default = <code>5.0</code></li>
+<li>animated: Whether or not the snack should animate in and out. Default = <code>true</code></li>
+<li>completion: The completion handler for when the snack is removed/button pressed. Default = <code>nil</code></li>
+</ul>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -401,49 +436,6 @@ so that the snack is presented above the bar.</p>
                           <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="nv">displayDuration</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Classes/LPSnackbar.html#/s:10LPSnackbarAAC18SnackbarCompletiona">SnackbarCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>displayDuration</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>How long to show the snack for, if <code>nil</code>, will show forever. Default = <code>5.0</code></p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>animated</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Whether or not the snack should animate in and out. Default = <code>true</code></p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The completion handler for when the snack is removed/button pressed. Default = <code>nil</code></p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -589,7 +581,7 @@ means that it will act as if the button was pressed by the user.</p></li>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://luispadron.com" target="_blank" rel="external">Luis</a>. All rights reserved. (Last updated: 2017-11-28)</p>
+          <p>&copy; 2018 <a class="link" href="https://luispadron.com" target="_blank" rel="external">Luis</a>. All rights reserved. (Last updated: 2018-01-08)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

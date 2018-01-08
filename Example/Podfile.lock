@@ -1,12 +1,12 @@
 PODS:
-  - LPSnackbar (1.0.0)
+  - LPSnackbar (2.0.1)
 
 DEPENDENCIES:
   - LPSnackbar
 
 SPEC CHECKSUMS:
-  LPSnackbar: 45b6ac3d05b5fa4828dd760a5e6611ac721191e0
+  LPSnackbar: a2a126775d27d838348d68bb2d2e556c42de7e73
 
 PODFILE CHECKSUM: 8ad3288ffc87cc59bb9a70ff359e5549f96ad84b
 
-COCOAPODS: 1.3.0.beta.2
+COCOAPODS: 1.4.0.beta.2

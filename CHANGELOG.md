@@ -1,5 +1,11 @@
 # LPSnackbar CHANGELOG
 
+## Version 2.1.0
+
+- Add support for `safeAreaInsets`, this guarantees that the snack will be placed within the correct frame, which fixes support for iPhone X.
+- To add support for `safeAreaInsets`, a new property `adjustsPositionForSafeArea` was added. With this set to `true` the snack will adjust it's position to fit within the correct frame.
+- Updated example project
+
 ## Version 2.0.1
 
 - Add support for carthage by updating to `shared` scheme.

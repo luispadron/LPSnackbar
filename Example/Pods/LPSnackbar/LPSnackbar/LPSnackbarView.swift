@@ -90,6 +90,9 @@ open class LPSnackbarView: UIView {
         }
     }
     
+    /// The default opacity for the view
+    internal let defaultOpacity: Float = 0.98
+    
     // MARK: Overrides
     
     /// Overriden
@@ -127,10 +130,12 @@ open class LPSnackbarView: UIView {
     
     /// Helper initializer which sets some customization for the view and adds the subviews/constraints.
     private func initialize() {
+        // Since this self is a container view, set accessibilty element to false
+        isAccessibilityElement = false
         // Customize UI
         autoresizingMask = [.flexibleWidth, .flexibleHeight]
         backgroundColor = UIColor(red: 0.184, green: 0.184, blue: 0.184, alpha: 1.00)
-        layer.opacity = 0.98
+        layer.opacity = defaultOpacity
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowRadius = 5.0
         layer.shadowOpacity = 0.4
@@ -198,6 +203,7 @@ open class LPSnackbarView: UIView {
     /// A small view which adds an accent that seperates the `titleLabel` and the `button`.
     open lazy var seperator: UIView = {
         let seperator = UIView(frame: .zero)
+        seperator.isAccessibilityElement = false
         seperator.backgroundColor = UIColor(red: 0.366, green: 0.364, blue: 0.368, alpha: 1.00)
         seperator.layer.cornerRadius = 2.0
         return seperator
