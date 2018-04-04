@@ -1,5 +1,9 @@
 # LPSnackbar CHANGELOG
 
+## Version 2.1.1
+
+- Build with Swift 4.1
+
 ## Version 2.1.0
 
 - Add support for `safeAreaInsets`, this guarantees that the snack will be placed within the correct frame, which fixes support for iPhone X.
@@ -14,7 +18,7 @@
 
 #### Breaking changes and fixes.
 - Fix issue where same snack couldn't be dismissed then shown again. This is now possible.
-- Breaking API change to initializer for `LPSnackbar`, the initializers no longer take a `displayDuration`. 
+- Breaking API change to initializer for `LPSnackbar`, the initializers no longer take a `displayDuration`.
 - Removed `displayDuration` member from `LPSnackbar`.
 - Add `displayDuration` parameter to the `show()` method, works the same as before, but it is now in a more general place as display duration may now change whenever you present the snack.
 
