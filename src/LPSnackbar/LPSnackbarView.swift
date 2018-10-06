@@ -160,7 +160,7 @@ open class LPSnackbarView: UIView {
         
         // Register for device rotation notifications
         NotificationCenter.default.addObserver(self, selector: #selector(self.didRotate(notification:)),
-                                               name: .UIDeviceOrientationDidChange, object: nil)
+                                               name: UIDevice.orientationDidChangeNotification, object: nil)
     }
     
     /// Called whenever the screen is rotated, this will ask the controller to recalculate the frame for the view.

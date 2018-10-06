@@ -442,7 +442,7 @@ open class LPSnackbar: Equatable {
     // MARK: Static Methods
 
     /// Allows showing a simple snack without needing to instantiate any `LPSnackbar`
-    open static func showSnack(title: String, displayDuration: TimeInterval? = 5.0, completion: SnackbarCompletion? = nil) {
+    public static func showSnack(title: String, displayDuration: TimeInterval? = 5.0, completion: SnackbarCompletion? = nil) {
         let snack = LPSnackbar(title: title, buttonTitle: nil)
         snack.show(displayDuration: displayDuration) { _ in
             completion?(false)
@@ -450,7 +450,7 @@ open class LPSnackbar: Equatable {
     }
 
     /// Allows showing a simple, more customizable, snack without needing to instantiate any `LPSnackbar`
-    open static func showSnack(attributedTitle: NSAttributedString, displayDuration: TimeInterval? = 5.0, completion: SnackbarCompletion? = nil) {
+    public static func showSnack(attributedTitle: NSAttributedString, displayDuration: TimeInterval? = 5.0, completion: SnackbarCompletion? = nil) {
         let snack = LPSnackbar(attributedTitle: attributedTitle, attributedButtonTitle: nil)
         snack.show(displayDuration: displayDuration) { _ in
             completion?(false)
@@ -460,7 +460,7 @@ open class LPSnackbar: Equatable {
     // MARK: Equatable
 
     /// Returns equals if and only if `lhs` and `rhs` are the same object.
-    open static func ==(lhs: LPSnackbar, rhs: LPSnackbar) -> Bool {
+    public static func ==(lhs: LPSnackbar, rhs: LPSnackbar) -> Bool {
         return lhs === rhs
     }
 
