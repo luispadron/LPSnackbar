@@ -1,6 +1,0 @@
-framework module Pods_LPSnackbarExample {
-  umbrella header "Pods-LPSnackbarExample-umbrella.h"
-
-  export *
-  module * { export * }
-}
