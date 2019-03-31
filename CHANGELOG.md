@@ -1,5 +1,9 @@
 # LPSnackbar CHANGELOG
 
+## Version 3.1.0
+
+- Build with Swift 5.0
+
 ## Version 3.0.0
 
 - Build with Swift 4.2.0
