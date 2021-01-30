@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "LPSnackbar"
   s.version      = "3.1.0"
-  s.swift_version = "4.2.0"
+  s.swift_version = "5.3"
   s.summary      = "A flexible and easy to use Snackbar control for iOS."
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author             = { "Luis Padron" => "luispadronn@gmail.com" }
   s.social_media_url   = "http://luispadron.com"
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "12.0"
 
   s.source       = { :git => "https://github.com/luispadron/LPSnackbar.git", :tag => "v#{s.version}" }
 
